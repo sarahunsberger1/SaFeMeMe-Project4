@@ -1,0 +1,26 @@
+---
+title: "Title"
+  - name: Meucci Ilunga & Sara Hunsberger & Fernanda Montoya & Meklit Yimenu
+  email: milunga2@jh.edu & shunsbe2@jh.edu & fmontoy1@jh.edu & myimenu1@jh.edu
+  jhedid: milunga2 & shunsbe2 & fmontoy & myimenu1
+format: pdf
+editor: visual
+---
+
+# Research Question and Importance
+
+# Already Existing Work
+
+# Outline of Work
+
+# Data Collection
+
+# Program Paradigms
+
+# Packages and Software
+
+# Product
+
+# Timeline
+
+# Task Split
