@@ -3,23 +3,58 @@ title: "Title"
   - name: Meucci Ilunga & Sara Hunsberger & Fernanda Montoya & Meklit Yimenu
   email: milunga2@jh.edu & shunsbe2@jh.edu & fmontoy1@jh.edu & myimenu1@jh.edu
   jhedid: milunga2 & shunsbe2 & fmontoy & myimenu1
+bibliography: project4.bib
 format: pdf
 editor: visual
 ---
 
 # Research Question and Importance
 
+How do variations in climate data (temperature, precipitation, and extreme weather events) affect cropland productivity over time, and can predictive models help identify future trends and risks?
+
 # Already Existing Work
+
+There has been research done on the impact of climate change on vegetation in the United States, for example the article "Impacts of global change on peak vegetation growth and its timing in terrestrial ecosystems of the continental US" by Ying Liu et.al describes an analysis using similar factors that we will be looking at including how the Normalized Difference Vegetation Index (NDVI) changes with differences in temperature, precipitation and cloud cover. But this research was done on all vegetation in the United States where we are more interested in how climate change impacts cropland specifically. This study found that precipitation had the largest impact on NDVI, which tells us that precipitation will be a good metric to look at for our analysis. [@LIU2021103657] 
+
+In terms of looking at climate change and cropland specifically, the paper "Climate change and adaptation in agriculture: Evidence from US cropping patterns" by Xiaomeng Cui talks about the idea that with climate change the types of crops being planted changes, for example in the US soybean and corn prodction has increased, and this paper says that climate change has contributed to that. This means that in our analysis we can also possibly examine shifts in crops along with their NDVI and other metrics of how well the crops are doing. [@CUI2020102306]
 
 # Outline of Work
 
+Use crop land data map to determine which subset of the vegetation data we are looking at from the satellite. PRISM data set looks at temperature and preceipitation from areas over time so we can use this to look at affect of climate on the vegetation data.
+
 # Data Collection
+
+Using earth engine API, PRISM, MODIS from earth engine. USDA cropland data layers, VIIRS
+
+Climate: https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_AN81d
+
+Vegetation Data: MODIS 2000 to today
+
+https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD13A1
+
+500 meter resolution
+
+Cropland Data: Using one of the 2: https://developers.google.com/earth-engine/datasets/catalog/USDA_NASS_CDL https://developers.google.com/earth-engine/datasets/catalog/USGS_GFSAD1000_V1
+
+Look for these variables in MODIS:
+
+NDVI (Normalized Difference Vegetation Index) is a widely used metric for assessing vegetation health and coverage using remote sensing data. It measures the difference between the near-infrared (NIR) light, which vegetation strongly reflects, and visible red light, which vegetation absorbs. EVI (Enhanced Vegetation Index) is an advanced vegetation index that improves upon NDVI by correcting for some of its limitations, particularly in areas with high biomass and dense vegetation where NDVI tends to saturate.
+
+Terra MODIS Vegetation Continuous Fields (VCF) is a dataset that provides valuable information about the proportional cover of vegetation types at a global scale. It offers insights into the distribution and density of vegetation by measuring the fractional cover of tree canopy, non-tree vegetation, and bare ground.
 
 # Program Paradigms
 
+Functional programming (r), Object oriented programming (python for accessing data through API), explore parallel programming to deal with size of data set.
+
 # Packages and Software
 
+R, using python to get data from the earth engine, rgee (to work with API data through R)
+
+QGIS, ARCGis, Geopandas
+
 # Product
+
+Website that includes our analysis.
 
 # Timeline
 
